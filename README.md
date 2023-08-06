@@ -1,2 +1,2 @@
-# move-malawi-website
-A website for Move Malawi.
+# Move Malawi Website
+A website for move malawi.
