@@ -4,28 +4,49 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
-        <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./icons/favicon.ico"
+            type="image/x-icon"
+        />
         <title>Move Malawi</title>
     </head>
     <body>
         <!-- Move Malawi at a glance section; includes navigation and slideshow -->
-        <section>
-
-            <nav class="text-center font-bold p-6 bg-blue-100 sticky">
-                <a href="" class="mx-6 underline">Home</a>
-                <a href="" class="mx-6 underline">Our Impact</a>
-                <a href="" class="mx-6 underline">Our Team</a>
-                <a href="" class="mx-6 underline">Read The Blog</a>
+        <section
+            class="h-screen w-screen bg-[url('./images/bg-image-home.jpg')] bg-cover"
+        >
+            <nav
+                class="sticky flex flex-row justify-between px-20 py-4 text-lg font-semibold text-blue-950 bg-white/80 backdrop-opacity-5"
+            >
+                <div id="logo" class="flex flex-row">
+                    <img
+                        src="./icons/favicon.ico"
+                        alt="Move Malawi Website"
+                        class="object-cover mx-6 rounded-full h-14 w-14"
+                    />
+                    <p class="self-center">Move Malawi</p>
+                </div>
+                <div id="links" class="flex flex-row items-center">
+                    <a href="" class="mx-6 underline">Home</a>
+                    <a href="" class="mx-6 underline">Our Impact</a>
+                    <a href="" class="mx-6 underline">Our Team</a>
+                    <a href="" class="mx-6 underline">Read The Blog</a>
+                </div>
             </nav>
 
-            <div id="slideshow" class="text-center">
-                <div id="slide-1">
-                    <div>
-                        <h1 class="text-3xl">Move Malawi</h1>
-                        <p>A Hope For The Future</p>
-                    </div>
-                </div>
+            <div class="absolute w-screen text-center bottom-16">
+                <h1 class="font-bold text-blue-700 text-8xl">Move Malawi</h1>
+                <p class="text-3xl font-medium text-blue-950">
+                    A Hope For The Future
+                </p>
             </div>
+            <div class="absolute text-center bottom-6">
+                <span class="w-40 h-40 rounded-full bg-slate-500"></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </section>
     </body>
 </html>
