@@ -12,10 +12,104 @@
         <title>Move Malawi</title>
     </head>
     <body>
-        <!-- Move Malawi at a glance section; includes navigation and slideshow -->
+        <!-- Move Malawi at a glance section; includes background slideshow and navigation -->
         <section>
+            <div id="slide-show" class="relative top-0">
+                <!-- Last slide to be displayed -->
+                <div id="3" class="absolute top-0 z-auto transition-opacity slide">
+                    <img
+                        src="./images/home-slide-3.jpg"
+                        lt="Move Malawi team members posing with move malawi banner"
+                        class="object-cover w-screen h-screen"
+                    />
+                    <div
+                        class="absolute flex flex-col items-center w-screen text-center bottom-20"
+                    >
+                        <div class="p-4 mx-56 bg-black/30">
+                            <h1
+                                class="mb-8 font-bold text-white underline text-8xl"
+                            >
+                                Mission
+                            </h1>
+                            <p class="text-3xl font-semibold text-white">
+                                To foster a culture of learning among the youth
+                                and equip them with skills and knowledge,
+                                through informal and formal education for their
+                                holistic development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second slide to be displayed -->
+                <div id="2" class="absolute top-0 z-auto transition-opacity slide">
+                    <img
+                        src="./images/home-slide-2.jpg"
+                        alt="Move Malawi team members posing with move malawi banner"
+                        class="object-cover w-screen h-screen"
+                    />
+                    <div
+                        class="absolute flex flex-col items-center w-screen text-center bottom-20"
+                    >
+                        <div class="p-4 mx-56 bg-black/30">
+                            <h1
+                                class="mb-8 font-bold text-white underline text-8xl"
+                            >
+                                Vision
+                            </h1>
+                            <p class="text-3xl font-semibold text-white">
+                                To create a future where young individuals
+                                are empowered to reach their potential by
+                                cultivating skills and knowledge through
+                                formal and informal education.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- First slide to be displayed -->
+                <div id="1" class="absolute top-0 z-auto transition-opacity slide">
+                    <img
+                        src="./images/home-slide-1.jpg"
+                        alt="Move Malawi team members posing with move malawi banner"
+                        class="object-cover w-screen h-screen"
+                    />
+                    <div
+                        class="absolute flex flex-col items-center w-screen text-center bottom-36"
+                    >
+                        <div class="p-4 mx-56 bg-black/30">
+                            <h1 class="font-bold text-white text-8xl">
+                                Move Malawi
+                            </h1>
+                            <p class="text-3xl font-semibold text-white">
+                                A Hope For The Future
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="controls" class="absolute flex flex-row justify-center w-screen bottom-10">
+                <span class="">
+                    <button
+                        onclick="displaySlide(2)"
+                        class="w-6 h-6 mx-2 transition-all duration-200 ease-in rounded-full bg-slate-100 hover:bg-slate-700 hover:border-slate-700 focus:bg-slate-700 focus:ring-2 focus:ring-slate-800"
+                    ></button>
+                </span>
+                <span class="">
+                    <button
+                        onclick="displaySlide(1)"
+                        class="w-6 h-6 mx-2 transition-all duration-200 ease-in rounded-full bg-slate-100 hover:bg-slate-700 hover:border-slate-700 focus:bg-slate-700 focus:ring-2 focus:ring-slate-800"
+                    ></button>
+                </span>
+                <span class="">
+                    <button
+                        onclick="displaySlide(0)"
+                        class="w-6 h-6 mx-2 transition-all duration-200 ease-in rounded-full bg-slate-100 hover:bg-slate-700 hover:border-slate-700 focus:bg-slate-700 focus:ring-2 focus:ring-slate-800"
+                    ></button>
+                </span>
+            </div>
+
             <nav
-                class="sticky flex flex-row justify-between px-12 py-4 text-base font-semibold text-center bg-white/30 backdrop-blur-sm text-blue-950"
+                class="sticky flex flex-row justify-between px-12 py-4 text-base font-semibold text-center bg-white/60 backdrop-blur-sm text-blue-950"
             >
                 <div id="logo" class="flex flex-row">
                     <img
@@ -33,31 +127,7 @@
                 </div>
             </nav>
 
-            <div id="slide-show">
-                <div id="slide-1">
-                    <img
-                        src="./images/inline-image-blog-aggie.jpg"
-                        alt="Move Malawi team members posing with move malawi banner"
-                        class="object-cover w-screen h-screen"
-                    />
-                    <div class="absolute bottom-0 flex flex-col items-center w-screen text-center">
-                        <div class="p-8 bg-white/30 backdrop-blur-sm">
-                            <h1 class="font-bold text-white text-8xl">
-                                Move Malawi
-                            </h1>
-                            <p class="text-3xl font-semibold text-blue-950">
-                                A Hope For The Future
-                            </p>
-                        </div>
-                        <div id="controls" class="my-10">
-                            <span class=""><button class="w-6 h-6 mx-1 transition-all duration-200 ease-in border-2 rounded-full bg-slate-100 border-slate-100 hover:bg-slate-700 hover:border-slate-700"></button></span>
-                            <span class=""><button class="w-6 h-6 mx-1 transition-all duration-200 ease-in border-2 rounded-full bg-slate-100 border-slate-100 hover:bg-slate-700 hover:border-slate-700"></button></span>
-                            <span class=""><button class="w-6 h-6 mx-1 transition-all duration-200 ease-in border-2 rounded-full bg-slate-100 border-slate-100 hover:bg-slate-700 hover:border-slate-700"></button></span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
         </section>
+        <script src="index.js"></script>
     </body>
 </html>
