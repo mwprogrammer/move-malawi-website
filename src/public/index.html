@@ -22,13 +22,13 @@
                     <!-- Last slide to be displayed -->
                     <div
                         id="hero-slide-3"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-3.jpg')] bg-center bg-cover h-screen flex row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-all duration-500 opacity-0 bg-[url('./images/ALP_2154.jpg')] bg-center bg-cover bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <div class="p-4 m-auto mx-56 text-center bg-black/30">
+                        <div class="mx-56 text-center mt-72">
                             <h1
-                                class="mb-8 font-bold text-white underline text-8xl"
+                                class="mb-8 text-6xl font-bold text-white underline"
                             >
-                                Mission
+                                Our Mission
                             </h1>
                             <p class="text-3xl font-semibold text-white">
                                 To foster a culture of learning among the youth
@@ -41,13 +41,13 @@
                     <!-- Second Slide to be displayed -->
                     <div
                         id="hero-slide-2"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-2.jpg')] bg-center bg-cover h-screen flex row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-all duration-500 opacity-0 bg-[url('./images/home-slide-2.jpg')] bg-center bg-cover bg-black/40 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <div class="p-4 m-auto mx-56 text-center bg-black/30">
+                        <div class="mx-56 text-center">
                             <h1
-                                class="mb-8 font-bold text-white underline text-8xl"
+                                class="mb-8 text-6xl font-bold text-white underline mt-72"
                             >
-                                Vision
+                                Our Vision
                             </h1>
                             <p class="text-3xl font-semibold text-white">
                                 To create a future where young individuals are
@@ -60,39 +60,46 @@
                     <!-- First Slide to be displayed -->
                     <div
                         id="hero-slide-1"
-                        class="transition-opacity bg-[url('./images/home-slide-1.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-all duration-500 bg-[url('./images/home-slide-1.jpg')] bg-center bg-cover bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <div class="flex flex-row justify-center mb-10">
-                            <div class="p-8 text-center rounded-md bg-black/30">
-                                <h1 class="mb-4 font-bold text-white text-8xl">
+                        <div class="flex flex-row justify-center mt-60">
+                            <div class="p-8 text-center">
+                                <h1 class="m-0 font-bold text-white text-9xl">
                                     Move Malawi
                                 </h1>
-                                <p class="text-4xl font-semibold text-white">
+                                <p class="m-0 text-6xl font-medium text-white">
                                     A Hope for the Future
                                 </p>
                             </div>
                         </div>
 
-                        <div class="flex flex-row justify-center">
+                        <div
+                            class="flex flex-row justify-center w-screen gap-6"
+                        >
                             <button
-                                class="p-4 mx-auto text-lg font-bold text-center text-white rounded-lg bg-blue-950"
+                                class="p-2 px-8 font-semibold text-center text-white transition-all duration-500 border-2 border-white rounded-full bg-white/5 hover:bg-white/20 backdrop-blur-sm"
                             >
-                                <a href="#learn-more">Learn more about us</a>
+                                <a href="#learn-more">Learn about our impact</a>
+                            </button>
+                            <button
+                                class="p-2 px-8 font-semibold text-center text-white transition-all duration-500 bg-blue-800 rounded-full"
+                            >
+                                <a href="#get-involved">Get Involved</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div
                     id="hero-control-buttons"
-                    class="w-screen flex flex-row justify-between absolute top-80 px-16 text-3xl text-white"
+                    class="absolute flex flex-row justify-between w-screen px-16 text-3xl text-white/70 top-80"
                 >
                     <i
                         onclick="displayHeroPreviousSlide()"
-                        class="fa-solid fa-circle-arrow-left hover:text-blue-700"
+                        class="transition-all duration-500 fa-solid fa-chevron-left hover:text-blue-700"
                     ></i>
                     <i
                         onclick="displayHeroNextSlide()"
-                        class="fa-solid fa-circle-arrow-right hover:text-blue-700"
+                        class="transition-all duration-500 fa-solid fa-chevron-right hover:text-blue-700"
                     ></i>
                 </div>
                 <div
@@ -103,27 +110,27 @@
                         <button
                             onclick="displayFirstHeroSlide()"
                             id="hero-slide-1-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-blue-800"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-blue-800 rounded-sm"
                         ></button>
                     </span>
                     <span class="">
                         <button
                             onclick="displaySecondHeroSlide()"
                             id="hero-slide-2-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
                     <span class="">
                         <button
                             onclick="displayLastHeroSlide()"
                             id="hero-slide-3-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
                 </div>
             </div>
             <nav
-                class="absolute top-0 flex flex-row justify-between w-screen px-12 py-4 text-base font-semibold text-center bg-white/60 backdrop-blur-sm text-blue-950"
+                class="absolute top-0 flex flex-row justify-between w-screen px-12 py-4 text-base font-semibold text-center text-white bg-white/20 backdrop-blur-sm"
             >
                 <div id="logo" class="flex flex-row">
                     <img
@@ -133,12 +140,32 @@
                     />
                     <p class="self-center text-xl">Move Malawi</p>
                 </div>
-                <svg class="h-6 w-6 cursor-pointer md:hidden block"></svg>
+                <svg class="block w-6 h-6 cursor-pointer md:hidden"></svg>
                 <div id="links" class="flex flex-row items-center">
-                    <a href="" class="mx-6 underline">Home</a>
-                    <a href="" class="mx-6">Our Impact</a>
-                    <a href="" class="mx-6">Our Team</a>
-                    <a href="" class="mx-6">Read The Blog</a>
+                    <a
+                        href=""
+                        class="mx-6 transition-all duration-500 hover:text-gray-300 active:text-gray-300"
+                    >
+                        Our Impact
+                    </a>
+                    <a
+                        href=""
+                        class="mx-6 transition-all duration-500 hover:text-gray-300 active:text-gray-300"
+                    >
+                        Our Team
+                    </a>
+                    <a
+                        href=""
+                        class="mx-6 transition-all duration-500 hover:text-gray-300 active:text-gray-300"
+                    >
+                        Our Values
+                    </a>
+                    <a
+                        href=""
+                        class="p-2 px-4 mx-6 transition-all duration-500 bg-blue-800 rounded-md hover:bg-blue-900 active:bg-blue-900"
+                    >
+                        Read our blog
+                    </a>
                 </div>
             </nav>
         </section>
@@ -237,144 +264,151 @@
                     <!-- Last slide to be displayed -->
                     <div
                         id="values-slide-5"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-3.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/ALP_2144.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between items-center p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <h1 class="text-6xl font-bold text-white ml-20">
-                            Our Values
-                        </h1>
-                        <div class="flex flex-row justify-center p-20">
-                            <div
-                                class="w-1/2 p-8 text-center text-white rounded-md bg-black/30"
+                        <div>
+                            <h1 class="mb-4 text-6xl font-bold text-white">
+                                Our Values
+                            </h1>
+                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <p
+                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
-                                <h1 class="mb-8 text-4xl font-bold underline">
-                                    Faith-Based
-                                </h1>
-                                <p class="text-2xl font-medium">
-                                    Rooted in our faith, we embrace the
-                                    teachings of Christ to foster holistic
-                                    development, character and compassion.
-                                    Through our programs, we aim to make a
-                                    positive difference in the lives of youth,
-                                    promoting grace and hope.
-                                </p>
-                            </div>
+                                Rooted in our faith, we embrace the teachings of
+                                Christ to foster holistic development, character
+                                and compassion. Through our programs, we aim to
+                                make a positive difference in the lives of
+                                youth, promoting grace and hope.
+                            </p>
+                            <p
+                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                            >
+                                Faith-Based
+                            </p>
                         </div>
                     </div>
                     <!-- Fourth slide to be displayed -->
                     <div
                         id="values-slide-4"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-3.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/ALP_2244.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between items-center p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <h1 class="text-6xl font-bold text-white ml-20">
-                            Our Values
-                        </h1>
-                        <div class="flex flex-row justify-center p-20">
-                            <div
-                                class="w-1/2 p-8 text-center text-white rounded-md bg-black/30"
+                        <div>
+                            <h1 class="mb-4 text-6xl font-bold text-white">
+                                Our Values
+                            </h1>
+                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <p
+                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
-                                <h1 class="mb-8 text-4xl font-bold underline">
-                                    Empathy and Respect
-                                </h1>
-                                <p class="text-2xl font-medium">
-                                    We value the uniqueness of every individual,
-                                    treating all with compassion and dignity. By
-                                    fostering understanding and embracing
-                                    differences, we create a safe and inclusive
-                                    space where personal growth and collective
-                                    learning thrive.
-                                </p>
-                            </div>
+                                We value the uniqueness of every individual,
+                                treating all with compassion and dignity. By
+                                fostering understanding and embracing
+                                differences, we create a safe and inclusive
+                                space where personal growth and collective
+                                learning thrive.
+                            </p>
+                            <p
+                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                            >
+                                Empathy and Respect
+                            </p>
                         </div>
                     </div>
                     <!-- Third Slide to be displayed -->
                     <div
                         id="values-slide-3"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-3.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/ALP_8773.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between items-center p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <h1 class="text-6xl font-bold text-white ml-20">
-                            Our Values
-                        </h1>
-                        <div class="flex flex-row justify-center p-20">
-                            <div
-                                class="w-1/2 p-8 text-center text-white rounded-md bg-black/30"
+                        <div>
+                            <h1 class="mb-4 text-6xl font-bold text-white">
+                                Our Values
+                            </h1>
+                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <p
+                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
-                                <h1 class="mb-8 text-4xl font-bold underline">
-                                    Community Engagement
-                                </h1>
-                                <p class="text-2xl font-medium">
-                                    We actively engage with the community to
-                                    address the needs of the youth and
-                                    contribute positively to society.
-                                </p>
-                            </div>
+                                We actively engage with the community to address
+                                the needs of the youth and contribute positively
+                                to society.
+                            </p>
+                            <p
+                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                            >
+                                Community Engagement
+                            </p>
                         </div>
                     </div>
                     <!-- Second Slide to be displayed -->
                     <div
                         id="values-slide-2"
-                        class="transition-opacity opacity-0 bg-[url('./images/home-slide-1.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/home-slide-4.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between items-center p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <h1 class="text-6xl font-bold text-white ml-20">
-                            Our Values
-                        </h1>
-                        <div class="flex flex-row justify-center p-20">
-                            <div
-                                class="w-1/2 p-8 text-center text-white rounded-md bg-black/30"
+                        <div>
+                            <h1 class="mb-4 text-6xl font-bold text-white">
+                                Our Values
+                            </h1>
+                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <p
+                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
-                                <h1 class="mb-8 text-4xl font-bold underline">
-                                    Youth Empowerment
-                                </h1>
-                                <p class="text-2xl font-medium">
-                                    Youth empowerment is at the heart of Move
-                                    Malawi. We strive to equip youth with the
-                                    tools, resources, and opportunities they
-                                    need to reach their full potential. Through
-                                    mentorship and formal and informal
-                                    education, we foster positive change.
-                                </p>
-                            </div>
+                                Youth empowerment is at the heart of Move
+                                Malawi. We strive to equip youth with the tools,
+                                resources, and opportunities they need to reach
+                                their full potential. Through mentorship and
+                                formal and informal education, we foster
+                                positive change.
+                            </p>
+                            <p
+                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                            >
+                                Youth Empowerment
+                            </p>
                         </div>
                     </div>
                     <!-- First Slide to be displayed -->
                     <div
                         id="values-slide-1"
-                        class="transition-opacity bg-[url('./images/home-slide-2.jpg')] bg-center bg-cover h-screen flex flex-col justify-center row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity bg-[url('./images/home-slide-3-2.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between items-center p-10 pr-24 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <h1 class="text-6xl font-bold text-white ml-20">
-                            Our Values
-                        </h1>
-                        <div class="flex flex-row justify-center p-20">
-                            <div
-                                class="w-1/2 p-8 text-center text-white rounded-md bg-black/30"
+                        <div>
+                            <h1 class="mb-4 text-6xl font-bold text-white">
+                                Our Values
+                            </h1>
+                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                        </div>
+
+                        <div class="w-1/3">
+                            <p
+                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
-                                <h1 class="mb-8 text-4xl font-bold underline">
-                                    Equality
-                                </h1>
-                                <p class="text-2xl font-medium">
-                                    We believe in providing equal opportunities
-                                    or all, regardless of their background,
-                                    gender, race or socioeconomic status. We
-                                    strive to create an inclusive environment
-                                    where every individual is valued, respected
-                                    and given a fair chance to succeed.
-                                </p>
-                            </div>
+                                We believe in providing equal opportunities or
+                                all, regardless of their background, gender,
+                                race or socioeconomic status. We strive to
+                                create an inclusive environment where every
+                                individual is valued, respected and given a fair
+                                chance to succeed.
+                            </p>
+                            <p
+                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                            >
+                                Equality
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div
-                    id="values-control-buttons"
-                    class="w-screen flex flex-row justify-between absolute top-80 px-16 text-3xl text-white"
-                >
-                    <i
-                        onclick="displayValuesPreviousSlide()"
-                        class="fa-solid fa-circle-arrow-left hover:text-blue-700"
-                    ></i>
-                    <i
-                        onclick="displayValuesNextSlide()"
-                        class="fa-solid fa-circle-arrow-right hover:text-blue-700"
-                    ></i>
-                </div>
+
                 <div
                     id="values-slide-markers"
                     class="absolute flex flex-row justify-center w-screen bottom-10"
@@ -383,37 +417,50 @@
                         <button
                             onclick="displayFirstValuesSlide()"
                             id="values-slide-1-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-blue-800"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-blue-800 rounded-sm"
                         ></button>
                     </span>
                     <span>
                         <button
                             onclick="displaySecondValuesSlide()"
                             id="values-slide-2-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
                     <span>
                         <button
                             onclick="displayThirdValuesSlide()"
                             id="values-slide-3-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
                     <span>
                         <button
                             onclick="displayFourthValuesSlide()"
                             id="values-slide-4-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
                     <span>
                         <button
                             onclick="displayLastValuesSlide()"
                             id="values-slide-5-marker"
-                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in rounded-sm bg-white"
+                            class="w-8 h-1 mx-1 transition-all duration-200 ease-in bg-white rounded-sm"
                         ></button>
                     </span>
+                </div>
+                <div
+                    id="values-control-buttons"
+                    class="absolute flex flex-row justify-end w-screen gap-4 px-12 text-3xl text-white/40 bottom-10"
+                >
+                    <i
+                        onclick="displayValuesPreviousSlide()"
+                        class="transition-all duration-500 fa-solid fa-circle-arrow-left hover:text-blue-700"
+                    ></i>
+                    <i
+                        onclick="displayValuesNextSlide()"
+                        class="transition-all duration-500 fa-solid fa-circle-arrow-right hover:text-blue-700"
+                    ></i>
                 </div>
             </div>
         </section>

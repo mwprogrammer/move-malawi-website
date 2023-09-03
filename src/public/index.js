@@ -1,8 +1,8 @@
 let intervalID;
-let heroSlideNumber = 2;
+let heroSlideNumber = 1; // Make it 2 when running slideshow
 let valuesSlideNumber = 1;
 
-runHeroSlideShow();
+// setTimeout(runHeroSlideShow, 1000);
 
 function runHeroSlideShow() {
 
