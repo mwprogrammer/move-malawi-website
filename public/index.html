@@ -22,15 +22,17 @@
                     <!-- Last slide to be displayed -->
                     <div
                         id="hero-slide-3"
-                        class="transition-all duration-500 opacity-0 bg-[url('./images/ALP_2154.jpg')] bg-center bg-cover bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-all duration-500 opacity-0 bg-[url('./images/ALP_2154.jpg')] lg:bg-center bg-cover bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <div class="mx-56 text-center mt-72">
+                        <div class="text-center lg:mx-56 mt-52 lg:mt-72">
                             <h1
-                                class="mb-8 text-6xl font-bold text-white underline"
+                                class="mb-8 text-3xl font-bold text-white underline lg:text-6xl"
                             >
                                 Our Mission
                             </h1>
-                            <p class="text-3xl font-semibold text-white">
+                            <p
+                                class="mx-12 text-xl font-semibold text-white lg:mx-0 lg:text-3xl"
+                            >
                                 To foster a culture of learning among the youth
                                 and equip them with skills and knowledge,
                                 through informal and formal education for their
@@ -43,13 +45,15 @@
                         id="hero-slide-2"
                         class="transition-all duration-500 opacity-0 bg-[url('./images/home-slide-2.jpg')] bg-center bg-cover bg-black/40 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
-                        <div class="mx-56 text-center">
+                        <div class="text-center lg:mx-56">
                             <h1
-                                class="mb-8 text-6xl font-bold text-white underline mt-72"
+                                class="mb-8 text-3xl font-bold text-white underline mt-52 lg:text-6xl lg:mt-72"
                             >
                                 Our Vision
                             </h1>
-                            <p class="text-3xl font-semibold text-white">
+                            <p
+                                class="mx-12 text-xl font-semibold text-white lg:mx-0 lg:text-3xl"
+                            >
                                 To create a future where young individuals are
                                 empowered to reach their potential by
                                 cultivating skills and knowledge through formal
@@ -60,38 +64,42 @@
                     <!-- First Slide to be displayed -->
                     <div
                         id="hero-slide-1"
-                        class="transition-all duration-500 bg-[url('./images/home-slide-1.jpg')] bg-center bg-cover bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-all duration-500 bg-[url('./images/home-slide-1.jpg')] bg-cover lg:bg-center bg-black/30 bg-blend-multiply h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
                         <div class="flex flex-row justify-center mt-60">
                             <div class="p-8 text-center">
-                                <h1 class="m-0 font-bold text-white text-9xl">
+                                <h1
+                                    class="m-0 text-4xl font-bold text-white lg:text-9xl"
+                                >
                                     Move Malawi
                                 </h1>
-                                <p class="m-0 text-6xl font-medium text-white">
+                                <p
+                                    class="m-0 text-2xl font-medium text-white lg:text-6xl"
+                                >
                                     A Hope for the Future
                                 </p>
                             </div>
                         </div>
 
                         <div
-                            class="flex flex-row justify-center w-screen gap-6"
+                            class="flex flex-col justify-center gap-4 px-16 lg:p-0 lg:w-screen lg:gap-6 lg:flex-row"
                         >
                             <button
-                                class="p-2 px-8 font-semibold text-center text-white transition-all duration-500 border-2 border-white rounded-full bg-white/5 hover:bg-white/20 backdrop-blur-sm"
-                            >
-                                <a href="#learn-more">Learn about our impact</a>
-                            </button>
-                            <button
-                                class="p-2 px-8 font-semibold text-center text-white transition-all duration-500 bg-blue-800 rounded-full"
+                                class="p-2 font-semibold text-center text-white transition-all duration-500 bg-blue-800 rounded-full lg:px-8 hover:bg-white hover:text-blue-800 backdrop-blur-sm"
                             >
                                 <a href="#get-involved">Get Involved</a>
+                            </button>
+                            <button
+                                class="p-2 font-semibold text-center text-white transition-all duration-500 border-2 border-white rounded-full lg:px-8 bg-white/5 hover:bg-white/20 backdrop-blur-sm"
+                            >
+                                <a href="#learn-more">Learn about our impact</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div
                     id="hero-control-buttons"
-                    class="absolute flex flex-row justify-between w-screen px-16 text-3xl text-white/70 top-80"
+                    class="absolute flex flex-row justify-between w-screen px-4 text-xl lg:text-3xl lg:px-16 text-white/70 top-80"
                 >
                     <i
                         onclick="displayHeroPreviousSlide()"
@@ -129,19 +137,22 @@
                     </span>
                 </div>
             </div>
+            <!-- Navbar -->
             <nav
-                class="absolute top-0 flex flex-row justify-between w-screen px-12 py-4 text-base font-semibold text-center text-white border-b bg-white/20 backdrop-blur-sm border-white/40"
+                class="absolute top-0 flex flex-row justify-between w-screen px-8 py-4 text-base font-semibold text-center text-white border-b lg:px-12 bg-white/20 backdrop-blur-sm border-white/40"
             >
                 <div id="logo" class="flex flex-row">
-                    <img
-                        src="./icons/favicon.ico"
-                        alt="Move Malawi Website"
-                        class="object-cover h-10 mx-6 rounded-full"
-                    />
-                    <p class="self-center text-xl">Move Malawi</p>
+                    <div class="flex flex-row">
+                        <img
+                            src="./icons/favicon.ico"
+                            alt="Move Malawi Website"
+                            class="object-cover h-10 mr-4 rounded-full lg:mr-6"
+                        />
+                        <p class="self-center text-xl">Move Malawi</p>
+                    </div>
                 </div>
-                <svg class="block w-6 h-6 cursor-pointer md:hidden"></svg>
-                <div id="links" class="flex flex-row items-center">
+
+                <div id="links" class="hidden mt-2 lg:block">
                     <a
                         href="#about-us"
                         class="mx-6 transition-all duration-500 hover:text-gray-300 active:text-gray-300"
@@ -179,17 +190,25 @@
                         Get Involved
                     </a>
                 </div>
+
+                <button
+                    class="p-0 m-0 border-0 cursor-pointer bg-none lg:hidden"
+                >
+                    <i class="mt-2 ml-20 text-2xl fa-solid fa-bars"></i>
+                </button>
             </nav>
         </section>
-        <section id="about-us" class="h-screen bg-gray-100">
+
+        <!-- About us section; includes cards -->
+        <section id="about-us" class="h-screen overflow-y-auto bg-gray-100">
             <h1
-                class="p-4 mb-6 text-4xl font-semibold text-center bg-white text-blue-950"
+                class="p-4 text-2xl font-semibold text-center bg-white lg:mb-6 lg:text-4xl text-blue-950"
             >
                 A Brief History of Move Malawi
             </h1>
-            <div class="flex flex-row justify-center gap-8 p-10">
+            <div class="flex flex-col justify-center gap-8 p-10 lg:flex-row">
                 <div
-                    class="flex flex-col items-center w-1/4 pb-6 transition-transform duration-75 bg-white shadow-md hover:scale-105 rounded-xl"
+                    class="flex flex-col items-center pb-6 transition-transform duration-75 bg-white shadow-md lg:w-1/4 hover:scale-105 rounded-xl"
                 >
                     <img
                         src="./images/ALP_2226.jpg"
@@ -211,7 +230,7 @@
                     </button>
                 </div>
                 <div
-                    class="flex flex-col items-center w-1/4 pb-6 transition-transform duration-75 bg-white shadow-md hover:scale-105 rounded-xl"
+                    class="flex flex-col items-center pb-6 transition-transform duration-75 bg-white shadow-md lex lg:w-1/4 hover:scale-105 rounded-xl"
                 >
                     <img
                         src="./images/ALP_2169.jpg"
@@ -232,7 +251,7 @@
                     </button>
                 </div>
                 <div
-                    class="flex flex-col items-center w-1/4 pb-6 transition-transform duration-75 bg-white shadow-md hover:scale-105 rounded-xl"
+                    class="flex flex-col items-center pb-6 transition-transform duration-75 bg-white shadow-md lex lg:w-1/4 hover:scale-105 rounded-xl"
                 >
                     <img
                         src="./images/ALP_2153.jpg"
@@ -255,7 +274,8 @@
             </div>
         </section>
 
-        <section id="values" class="h-screen">
+        <!-- Values section; includes background slideshow and footer -->
+        <section id="values" class="w-screen h-screen">
             <div id="values-slideshow" class="relative">
                 <div
                     id="values-slideshow-slides"
@@ -264,7 +284,7 @@
                     <!-- Last slide to be displayed -->
                     <div
                         id="values-slide-5"
-                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/ALP_2144.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity pr-24 opacity-0 bg-[url('./images/ALP_2144.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex lg:flex-row flex-col justify-between p-10 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
                         <div>
                             <h1
@@ -388,20 +408,22 @@
                     <!-- First Slide to be displayed -->
                     <div
                         id="values-slide-1"
-                        class="transition-opacity bg-[url('./images/home-slide-3-2.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-row justify-between p-10 pr-24 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
+                        class="transition-opacity w-full bg-[url('./images/home-slide-3-2.jpg')] bg-center bg-cover bg-black/50 bg-blend-multiply flex flex-col lg:flex-row lg:justify-between p-10 pr-24 h-screen row-start-1 row-end-1 col-start-1 col-end-1"
                     >
                         <div>
                             <h1
-                                class="mt-40 mb-4 text-6xl font-bold text-white"
+                                class="mt-0 mb-2 text-2xl font-bold text-white lg:text-left lg:mt-40 lg:text-6xl"
                             >
                                 Our Values
                             </h1>
-                            <div class="h-1 bg-blue-800 rounded w-80"></div>
+                            <div
+                                class="w-40 h-1 mb-4 bg-blue-800 rounded lg:w-80"
+                            ></div>
                         </div>
 
-                        <div class="w-1/3 mt-16">
+                        <div class="mt-0 lg:mt-16 lg:w-1/3">
                             <p
-                                class="p-4 mb-5 text-xl font-medium text-center text-white rounded ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
+                                class="p-4 mb-5 text-base font-medium text-center text-white rounded lg:text-xl ring-1 ring-white/40 backdrop-blur-sm bg-white/10"
                             >
                                 We believe in providing equal opportunities or
                                 all, regardless of their background, gender,
@@ -411,7 +433,7 @@
                                 chance to succeed.
                             </p>
                             <p
-                                class="p-4 text-2xl font-bold text-center text-white bg-blue-800 rounded-lg"
+                                class="p-2 text-lg font-bold text-center text-white bg-blue-800 rounded-lg lg:p-4 lg:text-2xl"
                             >
                                 Equality
                             </p>
@@ -420,7 +442,7 @@
                 </div>
                 <div
                     id="values-slide-markers"
-                    class="absolute flex flex-row justify-center w-screen bottom-36"
+                    class="absolute flex flex-row w-screen px-7 lg:p-0 lg:justify-center bottom-32 lg:bottom-36"
                 >
                     <span>
                         <button
@@ -460,7 +482,7 @@
                 </div>
                 <div
                     id="values-control-buttons"
-                    class="absolute flex flex-row justify-end w-screen gap-4 px-24 text-3xl text-white/40 bottom-40"
+                    class="absolute flex flex-row w-screen gap-4 px-8 text-xl lg:px-24 lg:justify-end lg:text-3xl text-white/40 bottom-40"
                 >
                     <i
                         onclick="displayValuesPreviousSlide()"
@@ -472,10 +494,12 @@
                     ></i>
                 </div>
                 <footer
-                    class="absolute bottom-0 flex flex-row items-center justify-between w-screen p-4 px-10 text-lg font-semibold bg-gray-100 border-t text-blue-950 backdrop-blur-sm border-white/40"
+                    class="absolute bottom-0 flex flex-col items-center justify-between w-screen p-6 px-10 text-lg font-semibold bg-gray-100 border-t lg:p-4 lg:flex-row text-blue-950 backdrop-blur-sm border-white/40"
                 >
                     <div class="flex flex-row">
-                        <h1 class="mr-2 font-semibold">Contact us:</h1>
+                        <h1 class="hidden mr-2 font-semibold lg:visible">
+                            Contact us:
+                        </h1>
                         <a
                             href="mailto:hello@movemalawi.com"
                             class="mx-2 transition-all duration-500 hover:text-blue-800"
